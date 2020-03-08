@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Confluent.Kafka;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
@@ -11,6 +12,7 @@ namespace scheme_validator.Controllers
     
     public class JsonController : Controller
     {
+        ProducerConfig config = new ProducerConfig { BootstrapServers = "{KAFKA_SERVER}:9092" };
         readonly JSchema schema = JSchema.Parse(@"{
     '$schema': 'http://json-schema.org/draft-04/schema#',
     'id': 'Validation Schema',
@@ -65,9 +67,17 @@ namespace scheme_validator.Controllers
 
         [Route("/")]
         [HttpPost]
-        public string Post([FromBody]JObject req)
+        public async Task<string> Post([FromBody]JObject req)
         {
-            return req.IsValid(schema) ? "valid" : "invalid";
+            if (req.IsValid(schema))
+            {
+                using (var p = new ProducerBuilder<Null, string>(config).Build())
+                {
+                    await p.ProduceAsync("KafkaRest", new Message<Null, string> {Value = req.ToString()});
+                    return "valid";
+                }
+            }
+            return "invalid";
         }
     }
 }

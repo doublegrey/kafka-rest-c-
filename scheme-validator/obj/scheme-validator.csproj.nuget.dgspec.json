@@ -39,6 +39,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[1.4.0-RC2, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",

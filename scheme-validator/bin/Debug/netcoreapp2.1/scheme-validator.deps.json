@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "56eea61ca0803d7b5142d69886320ac497c4a42b"
+    "signature": "77137e7de79aaee40264ab66ce6e939da5317711"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "scheme-validator/1.0.0": {
         "dependencies": {
+          "Confluent.Kafka": "1.4.0-RC2",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -34,6 +35,110 @@
         },
         "compile": {
           "scheme-validator.dll": {}
+        }
+      },
+      "Confluent.Kafka/1.4.0-RC2": {
+        "dependencies": {
+          "System.Memory": "4.5.1",
+          "librdkafka.redist": "1.4.0-RC1c"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Confluent.Kafka.dll": {
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Confluent.Kafka.dll": {}
+        }
+      },
+      "librdkafka.redist/1.4.0-RC1c": {
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/alpine-librdkafka.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/centos7-librdkafka.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/debian9-librdkafka.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/librdkafka.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/librdkafka.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/librdkafka.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/librdkafkacpp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libzstd.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/msvcp120.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/msvcr120.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/zlib.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/librdkafka.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/librdkafkacpp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libzstd.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/msvcp120.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/msvcr120.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/zlib.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -3174,6 +3279,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Confluent.Kafka/1.4.0-RC2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LTkTtDlk0i8aszWyooLdXEX2SgAmxu1xVMP0W5tQWerkX8bVQg+5ZvCLYb1GU3aUPEDp3qNvKFrbMoVVBuZVvQ==",
+      "path": "confluent.kafka/1.4.0-rc2",
+      "hashPath": "confluent.kafka.1.4.0-rc2.nupkg.sha512"
+    },
+    "librdkafka.redist/1.4.0-RC1c": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-az+No0a5B8/DkSm4DunLnX4WbEIJWN/ezGbV+znA0TW2YhcRgZ9p9eXYGM6jAZvSQajPXQhocnvfBkYlzk/3MQ==",
+      "path": "librdkafka.redist/1.4.0-rc1c",
+      "hashPath": "librdkafka.redist.1.4.0-rc1c.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",

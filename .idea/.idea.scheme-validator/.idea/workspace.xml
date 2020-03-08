@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73d62ea7-ae57-4f92-b9f9-de07471254c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.scheme-validator/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.scheme-validator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.scheme-validator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scheme-validator/Controllers/ValuesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scheme-validator/Controllers/ValuesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scheme-validator/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/scheme-validator/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.csprojAssemblyReference.cache" afterDir="false" />
@@ -100,7 +98,7 @@
       <updated>1583515409399</updated>
       <workItem from="1583515413449" duration="1354000" />
       <workItem from="1583687182085" duration="18000" />
-      <workItem from="1583687277588" duration="2315000" />
+      <workItem from="1583687277588" duration="3170000" />
     </task>
     <servers />
   </component>
@@ -127,26 +125,26 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="571" y="194" key="#scheme-validator:_IIS_Express/0.0.1920.1200@0.0.1920.1200" timestamp="1583515947793" />
-    <state width="1878" height="344" key="GridCell.Tab.0.bottom" timestamp="1583689983172">
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom" timestamp="1583692150635">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1583689983172" />
-    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1583688976677" />
-    <state width="1878" height="344" key="GridCell.Tab.0.center" timestamp="1583689983171">
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1583692150635" />
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1583692112849" />
+    <state width="1878" height="344" key="GridCell.Tab.0.center" timestamp="1583692150634">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="344" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1583689983171" />
-    <state width="1878" height="344" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1583688976675" />
-    <state width="1878" height="344" key="GridCell.Tab.0.left" timestamp="1583689983170">
+    <state width="1878" height="344" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1583692150634" />
+    <state width="1878" height="344" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1583692112847" />
+    <state width="1878" height="344" key="GridCell.Tab.0.left" timestamp="1583692150633">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="344" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1583689983170" />
-    <state width="1878" height="344" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1583688976674" />
-    <state width="1878" height="344" key="GridCell.Tab.0.right" timestamp="1583689983172">
+    <state width="1878" height="344" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1583692150633" />
+    <state width="1878" height="344" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1583692112846" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right" timestamp="1583692150634">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="344" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1583689983172" />
-    <state width="1878" height="344" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1583688976677" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1583692150634" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1583692112848" />
     <state x="560" y="339" key="Rider.ProjectTemplateDialog.Size" timestamp="1583516491587">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
