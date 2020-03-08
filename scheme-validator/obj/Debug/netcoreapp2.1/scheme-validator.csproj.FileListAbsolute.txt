@@ -1,0 +1,14 @@
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/bin/Debug/netcoreapp2.1/scheme-validator.deps.json
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/bin/Debug/netcoreapp2.1/scheme-validator.runtimeconfig.json
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/bin/Debug/netcoreapp2.1/scheme-validator.runtimeconfig.dev.json
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/bin/Debug/netcoreapp2.1/scheme-validator.dll
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/bin/Debug/netcoreapp2.1/scheme-validator.pdb
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.csprojAssemblyReference.cache
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.csproj.CoreCompileInputs.cache
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.RazorAssemblyInfo.cache
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.RazorAssemblyInfo.cs
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.AssemblyInfoInputs.cache
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.AssemblyInfo.cs
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.RazorTargetAssemblyInfo.cache
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.dll
+/Users/doublegrey/Projects/scheme-validator/scheme-validator/obj/Debug/netcoreapp2.1/scheme-validator.pdb

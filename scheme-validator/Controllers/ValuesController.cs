@@ -3,43 +3,71 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Schema;
 
 namespace scheme_validator.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ValuesController : ControllerBase
+    
+    public class JsonController : Controller
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] {"value1", "value2"};
+        readonly JSchema schema = JSchema.Parse(@"{
+    '$schema': 'http://json-schema.org/draft-04/schema#',
+    'id': 'Validation Schema',
+    'description': 'A schema that validates JSON before writing data in Kafka',
+    'type': 'object',
+    'properties': {
+        'Service': {
+            'type': 'object',
+            'properties': {
+                'ID': {
+                    'type': 'string'
+                },
+                'Version': {
+                    'type': 'string'
+                }
+            },
+            'required': [
+                'ID',
+                'Version'
+            ]
+        },
+        'Customer': {
+            'type': 'object',
+            'properties': {
+                'ID': {
+                    'type': 'string'
+                },
+                'Name': {
+                    'type': 'string'
+                },
+                'Surname': {
+                    'type': 'string'
+                },
+                'Email': {
+                    'type': 'string'
+                }
+            },
+            'required': [
+                'ID',
+                'Name',
+                'Surname',
+                'Email'
+            ]
         }
+    },
+    'required': [
+        'Service',
+        'Customer'
+    ]
+}");
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
 
-        // POST api/values
+        [Route("/")]
         [HttpPost]
-        public void Post([FromBody] string value)
+        public string Post([FromBody]JObject req)
         {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            return req.IsValid(schema) ? "valid" : "invalid";
         }
     }
 }
